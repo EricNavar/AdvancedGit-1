@@ -2,10 +2,11 @@ import math
 
 
 def custom_sqrt(number):
-    # TODO: implementation
+    if number < 0:
+        return -math.sqrt(-number)
     return math.sqrt(number)
 
 
-number = int(input("Enter a number: "))
+number = float(input("Enter a number: "))
 
 print(custom_sqrt(number))
